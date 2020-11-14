@@ -1,0 +1,174 @@
+<html>
+<head>
+<link rel="shortcut icon"  href="favicon.ico" type="image/x-icon">
+<style>
+body{width: 100%;
+height: 2800px;
+background: linear-gradient(180deg, #190059 17.74%, #59009F 35.42%);
+font-family:montserrat;
+font-size:32;
+color:white;
+overflow-x: hidden;}
+
+#back2{position: absolute;
+width: 1255px;
+height: 2200px;
+background:url("фон2.png");
+background-repeat:no-repeat;
+background-size:100%}
+
+ul{list-style-type: none;
+margin: 0;
+padding: 0;
+overflow:hidden;
+font-size:32;
+width:100%;
+text-align:center;
+position:absolute;}
+
+li a{color:white;
+font-family:bip;
+text-decoration:none;}
+
+li{display: inline;
+padding-left:50px;
+padding-right:50px;
+padding-bottom:400px;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#190059;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align:center;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display:block;}
+	
+.dropdown:hover .dropdown-content {display: block;}
+
+ul li a:hover{color:#FFEA9E;}
+.dropdown-content a:hover{background-color:#160045}
+
+.selected{
+color:#FCF05A;}
+
+.text1{
+
+font-family: BIP;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;}
+
+#text2{position: absolute;
+width: 1082px;
+left: 120px;
+top: 575px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 39px;
+}
+.light{font-family:Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 32px;
+line-height: 35px;}
+
+table{position: absolute;
+width: 700px;
+height: 450px;
+left: 550px;
+top: 122px;}
+tr, td {
+  border-bottom: 1px solid #ddd;
+}
+
+</style>
+</head>
+<body>
+<div id="back1"></div>
+<div id="back2"></div>
+
+<ul id="menu">
+<li style="padding-left:0px;"><a href="main.html">Главная</a></li>
+<li class="dropdown"><a href="main.html#stars" class="selected">Планеты</a>
+<div class="dropdown-content">
+      <a href="1.html">Меркурий</a>
+      <a href="2.html">Венера</a>
+      <a href="3.html">Земля</a>
+	  <a href="4.html">Марс</a>
+	  <a href="5.html">Юпитер</a>
+	  <a href="6.html">Сатурн</a>
+	  <a href="7.html">Уран</a>
+	  <a href="8.html">Нептун</a>
+    </div>
+</li>
+<li><a href="other.html">Другие объекты</a></li>
+<li><a href="test.html">Тест</a></li>
+<li style='padding-right:0px;'><a href="videos.html">Видео</a></li>
+</ul>
+
+<h2 style="position: absolute;width: 700px;text-align:center;left: 550px;top: 15px;font-family:bip;font-size:52;color:#FF4F19;">Марс</h2>
+
+<img src="4.png" alt="Марс" style="position: absolute;width: 450px;left: 60px; top: 100px;"/>
+
+<table>
+<tr>
+<td class="text1">Расстояние от Солнца:</td><td class="light">288 млн км</td>
+</tr>
+<tr>
+<td class="text1">Масса:</td><td class="light">6,39⋅10<sup style="font-size:20px;">23</sup> кг</td>
+</tr>
+<tr>
+<td class="text1">Площадь поверхности:</td><td class="light">1,45⋅10<sup style="font-size:20px;">8</sup> км²</td>
+</tr>
+<tr>
+<td class="text1">Период обращения вокруг Солнца:</td><td class="light">687 земных суток</td>
+</tr>
+<tr>
+<td class="text1">Продолжительность суток:</td><td class="light">1 д 0 ч 37 мин</td>
+</tr>
+<tr>
+<td class="text1" style="border-bottom:none;">Температура поверхности:</td><td class="light" style="border-bottom:none;">от -125 °C до 20 °C</td>
+</tr>
+</table>
+<a href="#menu"><img src="arrow.png" style="position:fixed;width:50px;left:1200px;top:500px;"></a>
+<p id="text2">Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу.Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей минералом маггемитом — γ-оксидом железа(III).
+<br>
+<br>
+Марс — планета земной группы с разреженной атмосферой (давление у поверхности в 160 раз меньше земного). Особенностями поверхностного рельефа Марса можно считать кратеры наподобие лунных, а также вулканы, долины, пустыни и полярные ледниковые шапки наподобие земных.
+<br>
+<br>
+У Марса есть два естественных спутника — Фобос и Деймос (в переводе с древнегреческого — «страх» и «ужас», имена двух сыновей Ареса, сопровождавших его в бою), которые относительно малы (Фобос — 26,8×22,4×18,4 км, Деймос — 15×12,2×10,4 км) и имеют неправильную форму.
+<br>
+<br>
+Рельеф Марса обладает многими уникальными чертами. Например, марсианский потухший вулкан гора Олимп — самая высокая известная гора на планетах Солнечной системы.
+<br>
+<br>
+Марс имеет период вращения и смену времён года, аналогичные земным, но его климат значительно холоднее и суше земного. Марс вращается вокруг своей оси, наклон которой обеспечивает смену времён года. Северное лето на Марсе долгое и прохладное, а южное — короткое и относительно тёплое.
+<br>
+<br>
+Весеннее таяние полярных шапок приводит к резкому повышению давления атмосферы и перемещению больших масс газа в противоположное полушарие. Скорость дующих при этом ветров составляет 10—40 м/с, иногда до 100 м/с. Ветер поднимает с поверхности большое количество пыли, что приводит к пылевым бурям. Сильные пылевые бури практически полностью скрывают поверхность планеты, а также оказывают заметное воздействие на распределение температуры в атмосфере Марса.
+<br>
+<br>
+Наилучшее время для наблюдений Марса — это его противостояния, когда планета оказывается на минимальном расстоянии от Земли. Противостояния Марса повторяются с интервалом в 2 года и 50 дней.
+<br>
+<br>
+Начиная с 1960-х годов непосредственным исследованием Марса с помощью АМС занимались СССР, США, Европейское космическое агентство и Индия. На сегодняшний день, после Земли, Марс — самая подробно изученная планета Солнечной системы.
+<br>
+<br>
+Близость Марса и относительное его сходство с Землёй породило ряд фантастических проектов о колонизации Марса землянами в будущем.
+</p>
+</body>
+</html>
