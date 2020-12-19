@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="shortcut icon"  href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
 <style>
 body{width: 100%;
 height: 500px;
@@ -13,12 +13,12 @@ overflow-x: hidden;}
 #back1{position: absolute;
 width: 1255px;
 height: 500px;
-background:url("фон.png");}
+background:url("/static/images/фон.png");}
 
 #back2{position: absolute;
 width: 1255px;
 height: 570px;
-background:url("фон2.png");
+background:url("/static/images/фон2.png");
 background-repeat:no-repeat;
 background-size:100%}
 
@@ -78,17 +78,7 @@ font-size:44;}
 iframe{}
 
 input:focus{outline:none;}
-
-
 </style>
-
-
-
-
-<script>
-src="test.js"
-</script>
-
 </head>
 
 <body>
@@ -96,29 +86,30 @@ src="test.js"
 <div id="back2"></div>
 
 <ul id="menu">
-<li style="padding-left:0px;"><a href="main.html">Главная</a></li>
-<li class="dropdown"><a href="#stars" class="dropbtn">Планеты</a>
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
 <div class="dropdown-content">
-      <a href="1.html">Меркурий</a>
-      <a href="2.html">Венера</a>
-      <a href="3.html">Земля</a>
-	  <a href="4.html">Марс</a>
-	  <a href="5.html">Юпитер</a>
-	  <a href="6.html">Сатурн</a>
-	  <a href="7.html">Уран</a>
-	  <a href="8.html">Нептун</a>
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
     </div>
 </li>
-<li><a href="other.html">Другие объекты</a></li>
-<li><a href="test.html" class="selected">Тест</a></li>
-<li style='padding-right:0px;'><a href="videos.html">Видео</a></li>
-</ul>
-<h1 class="headline" style='position:absolute;width:100%;text-align:center;top:30px;color:#FCF05A;'>Тест: какая ты планета?</h1>
+<li><a href="/other">Другие объекты</a></li>
+<li><a href="/test" class="selected">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
+
+<h1 class="headline" style='position:absolute;width:100%;text-align:center;top:10px;color:#FCF05A;'>Тест: какая ты планета?</h1>
 <div id="demo">
-<form action="test_6.html" id="q1" style="position:absolute;margin-left:200px;margin-right:200px;width:900px;top:130;left:0;">
+<form  action="/test_6" id="q1" style="position:absolute;margin-left:200px;margin-right:200px;width:900px;top:110;left:0;">
 <p style="margin-left:150px">Твой любимый день недели:</p>
 <div style="position:absolute;top:75px;margin-left:150px">
-  <input type="radio" id="1" name="day" value=2>
+  <input type="radio" id="1" name="day" value=2 required>
   <label for="1">Понедельник</label><br>
   <input type="radio" id="2" name="day" value=3>
   <label for="2">Вторник</label><br>
@@ -134,7 +125,10 @@ src="test.js"
     <label for="7">Воскресенье</label><br>
   <input type="radio" id="8" name="day" value=7>
   <label for="8">Не могу выбрать</label><br>
-  <input type="submit" class="headline" onclick="Func(1,name)"style="color:#FCF05A;background-color:transparent;border:none;font-size:32px;"value="Следующий вопрос">
+  <input type="submit" class="headline" style="color:#FCF05A;background-color:transparent;border:none;font-size:32px;"value="Следующий вопрос">
  </div>
 </form>
 </div>
+<progress value="50" max="100" style="position:absolute;top:535px;left:150px;margin-left:200px"></progress>
+</body>
+</html>

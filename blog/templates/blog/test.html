@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="shortcut icon"  href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
 <style>
 body{width: 100%;
 height: 500px;
@@ -13,7 +13,7 @@ overflow-x: hidden;}
 #back1{position: absolute;
 width: 1255px;
 height: 500px;
-background:url("фон.png");}
+background:url("/static/images/фон.png");}
 
 ul{list-style-type: none;
 margin: 0;
@@ -108,17 +108,6 @@ input:focus{outline:none;}
 }
 
 </style>
-
-
-<script>
-var planets=[{"name":"Меркурий","description":"","points":0}, {"name":"Венера","description":"","points":0},{"name":"Земля","description":"","points":0},{"name":"Марс","description":"","points":0},{"name":"Юпитер","description":"","points":0},{"name":"Сатурн","description":"","points":0},{"name":"Уран","description":"","points":0},{"name":"Нептун","description":"","points":0}]
-function Func(){
-var val=document.querySelector('input[name="color"]:checked').value;
-planets[val]["points"]++;
-document.getElementById("demo").innerHTML = planets[val]["points"];
-}
-</script>
-
 </head>
 
 <body>
@@ -126,25 +115,28 @@ document.getElementById("demo").innerHTML = planets[val]["points"];
 <div id="back2"></div>
 
 <ul id="menu">
-<li style="padding-left:0px;"><a href="main.html">Главная</a></li>
-<li class="dropdown"><a href="#stars" class="dropbtn">Планеты</a>
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
 <div class="dropdown-content">
-      <a href="1.html">Меркурий</a>
-      <a href="2.html">Венера</a>
-      <a href="3.html">Земля</a>
-	  <a href="4.html">Марс</a>
-	  <a href="5.html">Юпитер</a>
-	  <a href="6.html">Сатурн</a>
-	  <a href="7.html">Уран</a>
-	  <a href="8.html">Нептун</a>
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
     </div>
 </li>
-<li><a href="other.html">Другие объекты</a></li>
-<li><a href="test.html" class="selected">Тест</a></li>
-<li style='padding-right:0px;'><a href="videos.html">Видео</a></li>
-</ul>
+<li><a href="/other">Другие объекты</a></li>
+<li><a href="/test" class="selected">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
+
 <h1 class="headline" style='position:absolute;width:100%;text-align:left;top:30px;color:#FCF05A;'>Тест: какая ты планета?</h1>
 <p class="subline" style="position: absolute;width: 720px;top: 110px;padding:0px;">Пройди этот увлекательный тест и узнай на какую планету Солнечной системы ты больше всего похож(-а).</p>
-<img src="venus1.svg" alt="Планета" style="position:absolute;width:400px;left:800px;top:110px;background-repeat:no-repeat;">
-<img src="rocket 1.png" alt="Летящая ракета" id="spaceship" style="position:absolute;width:500px;left:620px;top:150px;background-repeat:no-repeat;">
-<a href="test_1.html"><img src="go_test.svg" alt="Пройти тест" style="position:absolute;top:400px;left:220px;width:300px;"></a>
+<img src="/static/images/venus1.svg" alt="Планета" style="position:absolute;width:400px;left:800px;top:110px;background-repeat:no-repeat;">
+<img src="/static/images/rocket 1.png" alt="Летящая ракета" id="spaceship" style="position:absolute;width:500px;left:620px;top:150px;background-repeat:no-repeat;">
+<a href="/test_1"><img src="/static/images/go_test.svg" alt="Пройти тест" style="position:absolute;top:400px;left:220px;width:300px;"></a>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="shortcut icon"  href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
 <style>
 body{width: 100%;
 height: 2150px;
@@ -13,7 +13,7 @@ overflow-x: hidden;}
 #back2{position: absolute;
 width: 1255px;
 height: 2150px;
-background:url("фон2.png");
+background:url("/static/images/фон2.png");
 background-repeat:no-repeat;
 background-size:100%}
 
@@ -128,46 +128,45 @@ iframe{}
 <div id="back2"></div>
 
 <ul id="menu">
-<li style="padding-left:0px;"><a href="main.html">Главная</a></li>
-<li class="dropdown"><a href="#stars" class="dropbtn">Планеты</a>
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
 <div class="dropdown-content">
-      <a href="1.html">Меркурий</a>
-      <a href="2.html">Венера</a>
-      <a href="3.html">Земля</a>
-	  <a href="4.html">Марс</a>
-	  <a href="5.html">Юпитер</a>
-	  <a href="6.html">Сатурн</a>
-	  <a href="7.html">Уран</a>
-	  <a href="8.html">Нептун</a>
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
     </div>
 </li>
-<li><a href="other.html" class="selected">Другие объекты</a></li>
-<li><a href="test.html">Тест</a></li>
-<li style='padding-right:0px;'><a href="videos.html">Видео</a></li>
-</ul>
+<li><a href="/other" class="selected">Другие объекты</a></li>
+<li><a href="/test">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
 <h1 class="headline" style='position:absolute;width:100%;text-align:center;top:30px;'>Другие объеты Солнечной системы</h1>
-<div style="position:absolute;top:180px;left:50px">
-<img src="sun.png" style="float:left;width:350px;" class="rotating">
-<p style="float:right;margin-left:50px;width:800px;">Со́лнце —  единственная звезда Солнечной системы. Вокруг Солнца обращаются другие объекты этой системы. Солнечное излучение поддерживает жизнь на Земле, определяет климат на планетах. На 73% состоит из водорода и на 25% из гелия. Средняя удалённость Солнца от Земли — 149,6 млн км.</p>
-</div>
-<a href="#menu"><img src="arrow.png" style="position:fixed;width:50px;left:1200px;top:505px;z-index:10;"></a>
-<div style="position:absolute;top:540px;left:50px">
-<img src="moon.png" style="float:right;width:320px;margin-top:40px;" class="shaking">
-<p style="float:left;margin-right:50px;width:800px;">Луна́ — единственный естественный спутник Земли. Самый близкий к Солнцу спутник планеты, так как у ближайших к Солнцу планет (Меркурия и Венеры) их нет. Среднее расстояние до Земли — 384 467 км.  Луна появилась около 4,51 млрд лет назад, немного позже Земли.
+
+<img src="/static/images/sun.png" style="position:absolute;top:180px;width:350px;" class="rotating">
+<p style="position:absolute;top:180px;left:390px;margin-left:50px;width:800px;">Со́лнце —  единственная звезда Солнечной системы. Вокруг Солнца обращаются другие объекты этой системы. Солнечное излучение поддерживает жизнь на Земле, определяет климат на планетах. На 73% состоит из водорода и на 25% из гелия. Средняя удалённость Солнца от Земли — 149,6 млн км.</p>
+
+<a href="#menu"><img src="/static/images/arrow.png" style="position:fixed;width:50px;left:1200px;top:505px;z-index:10;"></a>
+
+<img src="/static/images/moon.png" style="position:absolute;top:540px;left:850px;width:320px;margin-top:40px;" class="shaking">
+<p style="position:absolute;top:540px;left:10px;margin-right:50px;width:800px;">Луна́ — единственный естественный спутник Земли. Самый близкий к Солнцу спутник планеты, так как у ближайших к Солнцу планет (Меркурия и Венеры) их нет. Среднее расстояние до Земли — 384 467 км.  Луна появилась около 4,51 млрд лет назад, немного позже Земли.
 Луна является единственным внеземным астрономическим объектом, на котором побывал человек.</p>
-</div>
-<div style="position:absolute;top:950px;left:50px">
-<img src="planet.png" style="float:left;width:350px;margin-top:40px;"class="shaking">
-<p style="float:right;margin-left:50px;width:800px;">Карликовая планета — это небесное тело, которое вращается по орбите вокруг Солнца, имеет форму, близкую к сферической, не является спутником планеты, но, в отличие от планет, не может расчистить район своей орбиты от других объектов. В Солнечной системе 5 карликовых планет: Церера, Плутон (который до 24 августа 2006считался планетой), Эрида, Макемаке и Хаумеа.</p>
-</div>
-<div style="position:absolute;top:1370px;left:50px">
-<img src="asteroid.png" style="float:right;width:340px;margin-top:50px;"class="rotating">
-<p style="float:left;margin-right:50px;width:800px;">Астеро́ид — относительно небольшое небесное тело Солнечной системы, движущееся по орбите вокруг Солнца. Астероиды значительно уступают по массе и размерам планетам, имеют неправильную форму и не имеют атмосферы, хотя при этом и у них могут быть спутники. Входят в категорию малых тел Солнечной системы. В настоящий момент в Солнечной системе обнаружены сотни тысяч астероидов.<p>
-</div>
-<div style="position:absolute;top:1800px;left:50px">
-<img src="comet.png" style="float:left;width:350px;"class="flying">
-<p style="float:right;margin-left:50px;width:800px;margin-top:60px;">Коме́та — небольшое небесное тело, обращающееся вокруг Солнца по весьма вытянутой орбите в виде конического сечения. При приближении к Солнцу комета образует кому и иногда хвост из газа и пыли.
+
+
+<img src="/static/images/planet.png" style="position:absolute;top:950px;;width:350px;margin-top:40px;"class="shaking">
+<p style="position:absolute;top:950px;left:390px;margin-left:50px;width:800px;">Карликовая планета — это небесное тело, которое вращается по орбите вокруг Солнца, имеет форму, близкую к сферической, не является спутником планеты, но, в отличие от планет, не может расчистить район своей орбиты от других объектов. В Солнечной системе 5 карликовых планет: Церера, Плутон (который до 24 августа 2006считался планетой), Эрида, Макемаке и Хаумеа.</p>
+
+
+<img src="/static/images/asteroid.png" style="position:absolute;top:1370px;left:850px;width:340px;margin-top:50px;"class="rotating">
+<p style="position:absolute;top:1370px;left:10px;margin-right:50px;width:800px;">Астеро́ид — относительно небольшое небесное тело Солнечной системы, движущееся по орбите вокруг Солнца. Астероиды значительно уступают по массе и размерам планетам, имеют неправильную форму и не имеют атмосферы, хотя при этом и у них могут быть спутники. Входят в категорию малых тел Солнечной системы. В настоящий момент в Солнечной системе обнаружены сотни тысяч астероидов.<p>
+
+
+<img src="/static/images/comet.png" style="position:absolute;top:1800px;width:350px;"class="flying">
+<p style="position:absolute;top:1800px;left:390px;margin-left:50px;width:800px;margin-top:60px;">Коме́та — небольшое небесное тело, обращающееся вокруг Солнца по весьма вытянутой орбите в виде конического сечения. При приближении к Солнцу комета образует кому и иногда хвост из газа и пыли.
 На середину 2018 года обнаружено 6339 комет.</p>
-</div>
 </body>
 </html>

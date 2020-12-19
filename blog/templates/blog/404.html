@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
+<style>
+body{width: 100%;
+height: 500px;
+background: linear-gradient(180deg, #5900A0 17.74%, #59009F 35.42%);
+font-family:montserrat;
+font-size:32;
+color:white;
+overflow-x: hidden;}
+
+#back1{position: absolute;
+width: 1255px;
+height: 500px;
+background:url("/static/images/фон.png");}
+
+#back2{position: absolute;
+width: 1255px;
+height: 570px;
+background:url("/static/images/фон2.png");
+background-repeat:no-repeat;
+background-size:100%}
+
+ul{list-style-type: none;
+margin: 0;
+padding: 0;
+overflow:hidden;
+font-size:32;
+width:100%;
+text-align:center;
+position:absolute;}
+
+li a{color:white;
+font-family:bip;
+text-decoration:none;}
+
+li{display: inline;
+padding-left:50px;
+padding-right:50px;
+padding-bottom:400px;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#190059;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align:center;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display:block;}
+	
+.dropdown:hover .dropdown-content {display: block;}
+
+ul li a:hover{color:#FFEA9E;}
+.dropdown-content a:hover{background-color:#160045}
+
+.selected{
+color:#FCF05A;}
+
+.headline{font-family: BIP;
+font-size: 64px;
+text-align: center;
+color: white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+.subline{text-align:center;
+color:white;
+font-size:44;}
+iframe{}
+
+input:focus{outline:none;}
+
+
+</style>
+
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+<div id="back1"></div>
+<div id="back2"></div>
+
+<ul id="menu">
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
+<div class="dropdown-content">
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
+    </div>
+</li>
+<li><a href="/other">Другие объекты</a></li>
+<li><a href="/test" class="selected">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
+<p class="headline" style='position:absolute;width:100%;text-align:center;color:#FCF05A;font-size:400px;padding:0px;margin:0px;'>404</p>
+<p class="headline" style='position:absolute;width:100%;text-align:center;top:400px;font-size:64px;;'>Страница не найдена</p>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<html>
+<head>
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
+<style>
+body{width: 100%;
+background: linear-gradient(180deg, #5900A0 17.74%, #59009F 35.42%);
+font-family:montserrat;
+font-size:32;
+color:white;
+overflow-x: hidden;}
+
+ul{list-style-type: none;
+margin: 0;
+padding: 0;
+overflow:hidden;
+font-size:32;
+width:100%;
+text-align:center;
+position:absolute;}
+
+li a{color:white;
+font-family:bip;
+text-decoration:none;}
+
+li{display: inline;
+padding-left:50px;
+padding-right:50px;
+padding-bottom:400px;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#190059;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align:center;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display:block;}
+	
+.dropdown:hover .dropdown-content {display: block;}
+
+ul li a:hover{color:#FFEA9E;}
+.dropdown-content a:hover{background-color:#160045}
+
+.selected{
+color:#FCF05A;}
+
+.headline{font-family: BIP;
+font-size: 64px;
+text-align: center;
+color: white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+.subline{text-align:center;
+color:white;
+font-size:44;}
+iframe{}
+
+input:focus{outline:none;}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+<div id="back1"></div>
+<div id="back2"></div>
+
+<ul id="menu">
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
+<div class="dropdown-content">
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
+    </div>
+</li>
+<li><a href="/other">Другие объекты</a></li>
+<li><a href="/test">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
+<h1 class="headline" style='position:absolute;width:100%;text-align:center;top:30px;color:#FCF05A;'>Поиск</h1>
+
+<form action="/search">
+    <input type="text" id="search" name="search" placeholder="Поиск" style='position:absolute;left:100px;top:200px;height:50px;width:1000px;border-radius:25px;border:none;font-family:montserrat;font-size:32px;padding-left:50px;'><br>
+    <input type="submit" class="headline" style="position:absolute;top:200px;left:1020px;width:50px;height:50px;border:none;background-color:transparent;background-image:url('/static/images/magnifying-glass.svg');background-size:100%;padding:5px;"  value="">
+ </form>
+
+ <div id="postlist" style='position:absolute;width:1200;text-align:center;top:270px;left:10px;'>
+ <p id="number" style="text-align:center;width:100%"></p>
+{% for post in search_results %}
+
+    <div>
+	
+        <p style='text-align:left;color:#eee; font-size:18px; margin:0px; padding:0px;' >{{ post.published_date }}</p>
+        <p style='text-align:left;font-family:bip;font-size:40px;margin:0px; padding:0px;'><a style='text-decoration:none; color:#FCF05A' href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></p>
+        <p id='shorttext' style='text-align:left;font-size:28px;margin:0px; padding:0px;margin-bottom:50px;'>{{ post.shorttext}}...</p>
+
+		
+    </div>
+{% endfor %}
+</div>
+<input type="hidden" id="posts_number" name="variable" value="{{ posts_number }}">
+<script>
+var posts_number=document.getElementById("posts_number").value;
+if (posts_number==-1){
+document.getElementById("number").innerHTML=""}
+else{
+document.getElementById("number").innerHTML="По этому запросу нашлось "+posts_number.toString()+" постов"};
+if (posts_number==0){
+document.getElementById("number").innerHTML="По этому запросу ничего не нашлось:("};
+if ((posts_number%10==1)&&((posts_number==1)||(posts_number>20))){
+document.getElementById("number").innerHTML="По этому запросу нашёлся "+posts_number.toString()+" пост"};
+if ((posts_number%10<5)&&(posts_number%10>1)&&((posts_number<10)||(posts_number>20))){
+document.getElementById("number").innerHTML="По этому запросу нашлось "+posts_number.toString()+" поста"};
+</script>
+<script>
+var number = document.getElementById("postlist").offsetHeight;
+document.getElementById("body").style.height=number+180;
+</script>
+</body>
+</html>

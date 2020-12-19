@@ -1,9 +1,9 @@
 <html>
 <head>
-<link rel="shortcut icon"  href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon"  href="/static/images/favicon.ico" type="image/x-icon">
 <style>
 body{width: 100%;
-height: 2900px;
+height:1600px;
 background: linear-gradient(180deg, #190059 17.74%, #59009F 35.42%);
 font-family:montserrat;
 font-size:32;
@@ -11,13 +11,13 @@ overflow-x: hidden;}
 
 #back1{position: absolute;
 width: 1255px;
-height: 2900px;
-background:url("фон.png");}
+height: 1600px;
+background:url("/static/images/фон.png");}
 
 #back2{position: absolute;
 width: 1255px;
-height: 2200px;
-background:url("фон2.png");
+height: 1600px;
+background:url("/static/images/фон2.png");
 background-repeat:no-repeat;
 background-size:100%}
 
@@ -74,9 +74,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 .subline{text-align:center;
 color:white;
 font-size:44;}
-
 </style>
-<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='//embed.ex.co/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','exco-sdk'));</script><div class="exco" data-id="6e3d095f-d9e8-4f64-82d1-ea411300543c" data-show-share="false" data-show-info="false"></div>
 </head>
 
 <body>
@@ -84,23 +82,24 @@ font-size:44;}
 <div id="back2"></div>
 
 <ul id="menu">
-<li style="padding-left:0px;"><a href="main.html">Главная</a></li>
-<li class="dropdown"><a href="#stars" class="dropbtn">Планеты</a>
+
+<li class="dropdown"><a href="/" class="dropbtn">Планеты</a>
 <div class="dropdown-content">
-      <a href="1.html">Меркурий</a>
-      <a href="2.html">Венера</a>
-      <a href="3.html">Земля</a>
-	  <a href="4.html">Марс</a>
-	  <a href="5.html">Юпитер</a>
-	  <a href="6.html">Сатурн</a>
-	  <a href="7.html">Уран</a>
-	  <a href="8.html">Нептун</a>
+      <a href="/1">Меркурий</a>
+      <a href="/2">Венера</a>
+      <a href="/3">Земля</a>
+	  <a href="/4">Марс</a>
+	  <a href="/5">Юпитер</a>
+	  <a href="/6">Сатурн</a>
+	  <a href="/7">Уран</a>
+	  <a href="/8">Нептун</a>
     </div>
 </li>
-<li><a href="other.html">Другие объекты</a></li>
-<li><a href="test.html">Тест</a></li>
-<li style='padding-right:0px;'><a href="videos.html" class="selected">Видео</a></li>
-</ul>
+<li><a href="/other">Другие объекты</a></li>
+<li><a href="/test">Тест</a></li>
+<li style='padding-right:0px;'><a href="/videos" class="selected">Видео</a></li>
+<li style='padding-right:0px;'><a href="/posts" >Новости</a></li> </ul>
+
 <h1 class="headline" style='position:absolute;width:100%;text-align:center;top:30px;color:#FCF05A'>Видео</h1>
 
 <iframe style="position:absolute;top:200px;left:50px;"width="560" height="315" src="https://www.youtube.com/embed/jf6ZVXsaF9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,3 +107,6 @@ font-size:44;}
 <iframe style="position:absolute;top:560px;left:50px;"width="560" height="315" src="https://www.youtube.com/embed/71gTPeL4lDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe style="position:absolute;top:560px;left:660px;"width="560" height="315" src="https://www.youtube.com/embed/wNuJurXzHYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe src='https://www.embed.com/app/arcade/asteroids.html' style='position:absolute;top:900px; left:50px; width: 1170; height: 90%; float:center;' scrolling='no' frameBorder='0'></iframe>
+</body>
+</html>
+
